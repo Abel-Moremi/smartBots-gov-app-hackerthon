@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "614371972832",
+    "project_id": "smartbotshackathon",
+    "storage_bucket": "smartbotshackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614371972832:android:b2ba83af935c21be3ca285",
+        "android_client_info": {
+          "package_name": "com.smartBots.smartBotsApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614371972832-57s21fg880f2qklc58htvukf8m5h4a7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-h0UKqp2C36axZsHnZ72RH5GXfr677Sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614371972832-57s21fg880f2qklc58htvukf8m5h4a7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
