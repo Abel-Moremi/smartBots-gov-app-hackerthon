@@ -76,6 +76,7 @@ google-pasta==0.2.0
 graphviz==0.14.1
 greenlet==0.4.16
 grpcio==1.32.0
+gunicorn==20.0.4
 h5py==2.10.0
 HeapDict==1.0.1
 html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
@@ -167,6 +168,7 @@ prometheus-client==0.8.0
 prompt-toolkit==3.0.5
 protobuf==3.13.0
 psutil==5.7.0
+psycopg2-binary==2.8.6
 py @ file:///tmp/build/80754af9/py_1593446248552/work
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
