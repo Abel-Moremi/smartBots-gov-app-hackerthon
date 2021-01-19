@@ -19,7 +19,7 @@ on:
 jobs:
   health-check-job: # health check job for testing and code formatting check
     runs-on: ubuntu-latest # os for running the job
-     defaults:
+    defaults:
       run:
         working-directory: ./backend
     services:
