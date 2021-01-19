@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest # os for running the job
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./Backend
     services:
       postgres: # we need a postgres docker image to be booted a side car service to run the tests that needs a db
         image: postgres
@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./Backend
     needs: [health-check-job] # will be fired if and only if health-check-job is passed.
     if: ${{ github.event_name == 'push' }} # will be fired if the trigger event is a push event.
     steps:
@@ -83,7 +83,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./Backend
     needs: [package-job] # will require package-job to be successful for triggering
     if: ${{ github.event_name == 'push' }} # will be fire if the trigger event is a push event.
     steps:
