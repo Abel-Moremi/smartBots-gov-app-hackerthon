@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smartBotsApp/constants.dart';
+import 'package:smartBotsApp/config/constants.dart';
 
 class TextFieldContainer extends StatelessWidget {
   final Widget child;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smartBotsApp/components/text_field_container.dart';
-import 'package:smartBotsApp/constants.dart';
+import 'package:smartBotsApp/config/constants.dart';
 
 class RoundedInputVehicle extends StatelessWidget {
   final String hintText;

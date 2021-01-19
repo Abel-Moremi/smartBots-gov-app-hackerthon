@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "614371972832",
-    "project_id": "smartbotshackathon",
-    "storage_bucket": "smartbotshackathon.appspot.com"
+    "project_number": "220683983633",
+    "project_id": "smartbots-3529e",
+    "storage_bucket": "smartbots-3529e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:614371972832:android:b2ba83af935c21be3ca285",
+        "mobilesdk_app_id": "1:220683983633:android:ef4bc5035348e0d2ff0ab0",
         "android_client_info": {
           "package_name": "com.smartBots.smartBotsApp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "614371972832-57s21fg880f2qklc58htvukf8m5h4a7b.apps.googleusercontent.com",
+          "client_id": "220683983633-19gseemvps9m7mnb1sh5900s0956rfir.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA-h0UKqp2C36axZsHnZ72RH5GXfr677Sg"
+          "current_key": "AIzaSyBNDlO2U0pQHT2WL_HXl9uAqGIXiazpOCY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "614371972832-57s21fg880f2qklc58htvukf8m5h4a7b.apps.googleusercontent.com",
+              "client_id": "220683983633-19gseemvps9m7mnb1sh5900s0956rfir.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

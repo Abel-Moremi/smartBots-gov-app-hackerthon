@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:smartBotsApp/Screens/Welcome/welcome_screen.dart';
-import 'package:smartBotsApp/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:smartBotsApp/screens/HomeScreen/HomeScreen.dart';
+import 'package:smartBotsApp/screens/LandRightsScreen/common_land_rights.dart';
+import 'package:smartBotsApp/screens/register_vehicle/register_vehicle.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,11 +17,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Auth',
-      theme: ThemeData(
-        primaryColor: kPrimaryColor,
-        scaffoldBackgroundColor: Colors.white,
-      ),
-      home: WelcomeScreen(),
+      
+      initialRoute: '/',
+      routes: {
+        '/':(context) => Home(),
+        '/RegisterVehicle':(context) => RegisterVehicle(),
+        '/CommonLandRights':(context) => CommonLandRights(),
+      },
     );
   }
 }
