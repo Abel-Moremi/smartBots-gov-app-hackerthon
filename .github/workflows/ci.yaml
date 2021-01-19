@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest # os for running the job
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./Backend
     services:
       postgres: # we need a postgres docker image to be booted a side car service to run the tests that needs a db
         image: postgres
@@ -46,13 +46,11 @@ jobs:
       - name: Setup python environment # setting python environment to 3.x
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x' # if you want multiple python version run just use matrix strategy in job config. See the documentation of GitHub Actions
+          python-version: '3.7' # if you want multiple python version run just use matrix strategy in job config. See the documentation of GitHub Actions
       - name: Check Python version # checking the python version to see if 3.x is installed.
         run: python --version
       - name: Install requirements # install application requirements
         run: pip install -r requirements.txt
-      - name: Check Syntax # check code formatting
-        run: pycodestyle --statistics .
       - name: Run Migrations # run migrations to create table in side car db container
         run: python manage.py migrate
       - name: Run Test # running tests
@@ -62,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./Backend
     needs: [health-check-job] # will be fired if and only if health-check-job is passed.
     if: ${{ github.event_name == 'push' }} # will be fired if the trigger event is a push event.
     steps:
@@ -83,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./Backend
     needs: [package-job] # will require package-job to be successful for triggering
     if: ${{ github.event_name == 'push' }} # will be fire if the trigger event is a push event.
     steps:
