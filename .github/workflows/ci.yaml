@@ -19,7 +19,7 @@ on:
 jobs:
   health-check-job: # health check job for testing and code formatting check
     runs-on: ubuntu-latest # os for running the job
-     strategy:
+    strategy:
       matrix:
         python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
     defaults:
