@@ -19,6 +19,9 @@ on:
 jobs:
   health-check-job: # health check job for testing and code formatting check
     runs-on: ubuntu-latest # os for running the job
+     defaults:
+      run:
+        working-directory: ./backend
     services:
       postgres: # we need a postgres docker image to be booted a side car service to run the tests that needs a db
         image: postgres
@@ -57,6 +60,9 @@ jobs:
 
   package-job: # package job for building and publishing docker images
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
     needs: [health-check-job] # will be fired if and only if health-check-job is passed.
     if: ${{ github.event_name == 'push' }} # will be fired if the trigger event is a push event.
     steps:
@@ -75,6 +81,9 @@ jobs:
 
   deploy-job: # deploy job is for deploying our code to google cloud cluster.
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
     needs: [package-job] # will require package-job to be successful for triggering
     if: ${{ github.event_name == 'push' }} # will be fire if the trigger event is a push event.
     steps:
