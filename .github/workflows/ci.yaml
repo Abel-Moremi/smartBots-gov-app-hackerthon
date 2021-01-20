@@ -118,7 +118,7 @@ jobs:
           --wait
           --atomic
           app
-          ./k8s
+          ./backend/k8s
       - name: Check pods # checking pod list to see if they are running.
         run: kubectl get pods
 
