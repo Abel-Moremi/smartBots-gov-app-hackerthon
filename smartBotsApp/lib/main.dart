@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:smartBotsApp/screens/BottomNavigationBar.dart';
 import 'package:smartBotsApp/screens/HomeScreen/HomeScreen.dart';
 import 'package:smartBotsApp/screens/LandRightsScreen/common_land_rights.dart';
 import 'package:smartBotsApp/screens/register_vehicle/register_vehicle.dart';
@@ -17,12 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Auth',
-      
       initialRoute: '/',
       routes: {
-        '/':(context) => Home(),
-        '/RegisterVehicle':(context) => RegisterVehicle(),
-        '/CommonLandRights':(context) => CommonLandRights(),
+        '/': (context) => BottomNavBar(),
+        '/Home': (context) => Home(),
+        '/RegisterVehicle': (context) => RegisterVehicle(),
+        '/CommonLandRights': (context) => CommonLandRights(),
       },
     );
   }
