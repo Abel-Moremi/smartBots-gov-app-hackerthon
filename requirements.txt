@@ -252,7 +252,7 @@ thinc==7.4.1
 threadpoolctl 
 toml 
 toolz==0.10.0
-torch==1.6.0
+# torch==1.6.0
 torchvision==0.7.0
 tornado==6.0.4
 tqdm 
