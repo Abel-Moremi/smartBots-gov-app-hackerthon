@@ -1,5 +1,4 @@
 FROM python:3
-WORKDIR /backend
 RUN mkdir /code
 WORKDIR /code
 COPY requirements.txt .
