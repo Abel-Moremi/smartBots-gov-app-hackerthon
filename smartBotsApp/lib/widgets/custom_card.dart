@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
-  final String asset;
+ // final String asset;
   final String heading;
   final String routeName;
+  final IconData icon;
   final VoidCallback onTap;
 
   CustomCard(
     {
-      this.asset,
+      //this.asset,
       this.heading,
       this.onTap,
+      this.icon,
       this.routeName
     }
   );
@@ -32,7 +34,7 @@ class CustomCard extends StatelessWidget {
           children: <Widget>[
             AspectRatio(
               aspectRatio: 4 / 3,
-              child: Image.asset(asset),
+              child: Icon(icon,size:43),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10.0, 6.0, 10.0,0.0),
@@ -41,9 +43,13 @@ class CustomCard extends StatelessWidget {
                 children: <Widget>[
                   //Text('Title'),
                   //SizedBox(height: 8.0),
-                  Text(
-                    heading,
-                    style: TextStyle(fontSize: 12.0,fontWeight: FontWeight.bold),
+                  Align(
+                    child: Text(
+                      heading,
+                      textAlign: TextAlign.center
+                      ,
+                      style: TextStyle(fontSize: 12.0,fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ],
               ),

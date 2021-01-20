@@ -8,7 +8,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,46 +18,43 @@ class _HomeState extends State<Home> {
         mainAxisSpacing: 10.0,
         padding: EdgeInsets.all(16.0),
         childAspectRatio: 8.0 / 10,
-        // TODO: Build a grid of cards (102)
         children: <Widget>[
           CustomCard(
-            asset: 'assets/images/wallp.jpg',
+            icon: Icons.directions_car_rounded,
             heading: 'Register Vehicle',
             routeName: '/RegisterVehicle',
           ),
           CustomCard(
-            asset: 'assets/images/wallp.jpg',
+            icon: Icons.night_shelter_rounded,
             heading: 'Common Law Land Rights',
             routeName: 'CommonLandRights',
           ),
           CustomCard(
-            asset: 'assets/images/wallp.jpg',
+            icon: Icons.night_shelter_rounded,
+            heading: 'Customary Land Rights',
+          ),
+          CustomCard(
+            icon: Icons.work_rounded,
             heading: 'Internship',
           ),
           CustomCard(
-            asset: 'assets/images/wallp.jpg',
+            icon: Icons.airline_seat_recline_normal,
             heading: 'Driving License',
           ),
           CustomCard(
-            asset: 'assets/images/wallp.jpg',
-            heading: 'Internship',
+            icon: Icons.pets,
+            heading: 'DVS VMP application',
           ),
           CustomCard(
-            asset: 'assets/images/wallp.jpg',
-            heading: 'Driving License',
+            icon: Icons.text_snippet_rounded,
+            heading: 'Plant Import Permit',
           ),
           CustomCard(
-            asset: 'assets/images/wallp.jpg',
-            heading: 'Internship',
-          ),
-          CustomCard(
-            asset: 'assets/images/wallp.jpg',
-            heading: 'Driving License',
+            icon: Icons.subject,
+            heading: 'BAITS Access',
           ),
         ],
       ),
-      
-
     );
   }
 }
