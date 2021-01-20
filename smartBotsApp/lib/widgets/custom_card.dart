@@ -34,7 +34,7 @@ class CustomCard extends StatelessWidget {
           children: <Widget>[
             AspectRatio(
               aspectRatio: 4 / 3,
-              child: Icon(icon,size:43),
+              child: Icon(icon,size:40),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10.0, 6.0, 10.0,0.0),

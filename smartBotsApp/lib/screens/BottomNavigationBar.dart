@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:smartBotsApp/screens/BottomNavScreens/Notificatons.dart';
+import 'package:smartBotsApp/screens/newtest.dart';
+import 'BottomNavScreens/News.dart';
+import 'BottomNavScreens/search.dart';
 import 'HomeScreen/HomeScreen.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -12,7 +15,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   final tabs = [
     Home(),
-    
+    News(),
+    Search(),
+    Notifications(),
+    TestWidget()
   ];
 
   @override
@@ -33,13 +39,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
+            icon: Icon(Icons.announcement_rounded),
+            label: 'News',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.camera),
-            label: 'Pictures',
+            icon: Icon(Icons.layers),
+            label: 'Services',
+            backgroundColor: Colors.white,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            label: 'Alerts',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(

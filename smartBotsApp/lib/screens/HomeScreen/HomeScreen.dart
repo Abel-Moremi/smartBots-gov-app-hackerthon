@@ -27,11 +27,12 @@ class _HomeState extends State<Home> {
           CustomCard(
             icon: Icons.night_shelter_rounded,
             heading: 'Common Law Land Rights',
-            routeName: 'CommonLandRights',
+            routeName: '/CommonLandRights',
           ),
           CustomCard(
             icon: Icons.night_shelter_rounded,
             heading: 'Customary Land Rights',
+            routeName: '/CustomaryLandRights',
           ),
           CustomCard(
             icon: Icons.work_rounded,
