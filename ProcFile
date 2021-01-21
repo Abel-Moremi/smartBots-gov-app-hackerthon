@@ -1,1 +1,1 @@
-web: gunicorn smartbotsdjangobackend.wsgi --log-file - 
+web: gunicorn smartBots-gov-app-hackerthon.wsgi --log-file - 
