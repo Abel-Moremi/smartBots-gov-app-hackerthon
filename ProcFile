@@ -1,1 +1,1 @@
-web: gunicorn smartbotsDjangoBackend.wsgi
+web: gunicorn smartbotsDjangoBackend.wsgi --log-file - 

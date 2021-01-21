@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'smartbotsDjangoBackend.smartbotsDjangoBackend.urls'
+ROOT_URLCONF = 'smartbotsDjangoBackend.urls'
 
 TEMPLATES = [
     {
