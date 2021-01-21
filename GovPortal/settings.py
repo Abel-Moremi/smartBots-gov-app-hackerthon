@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+import django_heroku
 
 from pathlib import Path
 
@@ -27,7 +28,9 @@ SECRET_KEY = '42&y$!da6#g4%$sn5-y$^hyu0-fggfcsm$wq&o1ftpeax(+z9l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://smartbots-gov-app-hackerthon.herokuapp.com'
+]
 
 
 # Application definition
@@ -133,3 +136,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Activate Django-Heroku.
+django_heroku.settings(locals())
