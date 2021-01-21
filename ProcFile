@@ -1,1 +1,1 @@
-web: gunicorn GovPortal.wsgi
+web: gunicorn govportal.wsgi
