@@ -26,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '42&y$!da6#g4%$sn5-y$^hyu0-fggfcsm$wq&o1ftpeax(+z9l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://smartbots-django-backend.herokuapp.com'
+    'https://smartbots-django-backend.herokuapp.com/'
 ]
 
 
