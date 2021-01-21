@@ -29,7 +29,7 @@ SECRET_KEY = '42&y$!da6#g4%$sn5-y$^hyu0-fggfcsm$wq&o1ftpeax(+z9l'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://smartbots-gov-app-hackerthon.herokuapp.com'
+    'https://smartbots-django-backend.herokuapp.com'
 ]
 
 
