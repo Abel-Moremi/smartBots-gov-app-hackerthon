@@ -1,1 +1,1 @@
-web: gunicorn smartbotsdjangobackend.wsgi
+web: gunicorn smartbotsDjangoBackend.wsgi
